@@ -1,0 +1,68 @@
+adress=base address +(index *size)
+base address = 1000
+every integer have 4 nytes
+index = 0
+1000+(0*4)=1000
+index=1
+1000+(1*4)=1004
+index=2
+1000+(2*4)=1008
+arr=[1,2,3,4]
+access 2nd element --->arr[1]
+
+update an element ---->arr[2]=5
+
+
+if a[3] = 25 == 25
+types of searching:
+1 -> linear search --> searching am element one by one, arr=[5,7,11,25,64]
+
+2 --> binary search --> taking mid element as target element --> divide and conquer
+			mid == target
+			target < mid
+			target > mid
+	--> search key we have found--> search key is nothing but mid value after element is 
+            the search element
+eg: Start with a sorted array.  
+Example: [2, 5, 8, 12, 16, 23, 38, 56, 72, 91]
+
+Find the middle element.
+
+If mid == target, return index.
+
+If target < mid, search left half.
+
+If target > mid, search right half.
+
+Repeat until found or search space is empty.
+
+👉 Example: Searching for 23
+
+Middle of array = 16 → 23 > 16 → search right half.
+
+New middle = 38 → 23 < 38 → search left half.
+
+New middle = 23 → found at index 5.
+
+
+---> HASH BASED SERACHING
+     ---------------------
+eg : set and dictinory
+
+---> TREE BASED SEARCHING
+--------------------------
+arr = [3 4 5 6 7 66 77]
+search key = 7
+linear search :
+for every element :
+	if current element == search key:
+		return index
+return -1
+
+
+binary serch --> binary search is work for only sorted
+------------
+step 1) initialize ledt right and mid
+step 2) if arr[mid] == target? --> answer
+step 3) if target > arr[mid] --> righnt
+step 4) if target <= mid --> left
